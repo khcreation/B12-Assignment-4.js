@@ -10,13 +10,11 @@ return fine;
 
 //**Problem-2 */
 
-function  onlyCharacter( str ) {
-    if(str !== "string"){
-        return "Invalid"
-    }
-
-  let character = str.split(" ").join("").toUpperCase(" ");
-
+function onlyCharacter(str) {
+  if (typeof str !== 'string') {
+    return "Invalid"; 
+  }
+  const character = str.split(' ').join('').toUpperCase();
   return character;
 }
 
@@ -41,7 +39,7 @@ function  bestTeam( player1, player2 ) {
 // **Problem-4*/
 
 function  isSame(arr1 , arr2 ) {
-    if(!Array.isArray(arr1) !== !Array.isArray(arr2)){
+    if(!Array.isArray(arr1) || !Array.isArray(arr2)){
         return "Invalid"
     }
  if (arr1.length !== arr2.length){

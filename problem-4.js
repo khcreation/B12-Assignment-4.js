@@ -1,5 +1,5 @@
 function  isSame(arr1 , arr2 ) {
-    if(!Array.isArray(arr1) !== !Array.isArray(arr2)){
+    if(!Array.isArray(arr1) || !Array.isArray(arr2)){
         return "Invalid"
     }
  if (arr1.length !== arr2.length){
@@ -13,5 +13,5 @@ function  isSame(arr1 , arr2 ) {
  return true;
 }
 
-console.log(isSame([1 , "4" , 4] ,[1 , 4  , 4]))
+console.log(isSame([1 , 4 , 4] ,[1 , 4  , 4]))
 

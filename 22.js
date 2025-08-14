@@ -5,6 +5,7 @@ function onlyCharacter(str) {
   const character = str.split(' ').join('').toUpperCase();
   return character;
 }
+
 console.log (onlyCharacter ( "Cy   bar- At  tac k  "
 
 
